@@ -24,7 +24,7 @@ function App() {
     setError(null);
     setCopied(false);
     try {
-      const { data } = await axios.post("https://back-7gkt.onrender.com/generate", { Topic });
+      const { data } = await axios.post("https://idola.onrender.com/generate", { Topic });
       setArticle(data.text);
     } catch (error) {
       console.error("Error saat mengambil data:", error.response ? error.response.data : error.message);
